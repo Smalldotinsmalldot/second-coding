@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <link rel="stylesheet" href="setting.css" />
+  </head>
+  <body>
+    <h2 id="clock"></h2>
+    <form id="login-form" class="hidden">
+      <input type="text" maxlength="15" required spellcheck="false" />
+      <input type="submit" value="로그인" class="hidden" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form" class="hidden">
+      <input type="text" spellcheck="false" />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="quotes">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="login.js"></script>
+    <script src="clock.js"></script>
+    <script src="quote.js"></script>
+    <script src="background.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>

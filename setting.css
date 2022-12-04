@@ -1,0 +1,130 @@
+/* 전체 */
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  overflow: hidden;
+  color: white;
+  font-family: "Jua", sans-serif;
+}
+
+/* 시간 */
+
+#clock {
+  font-size: 7vw;
+  margin: 0px;
+}
+
+/* 이름입력 */
+
+#login-form > input:first-child {
+  border-color: black;
+  border-width: 0px 0px 1px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  color: white;
+  width: 15vw;
+  font-size: 2.5vw;
+}
+
+#login-form > input:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 할 일 목록 */
+
+#todo-form > input {
+  border-color: black;
+  border-width: 0px 0px 1px 0px;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  font-family: "Jua", sans-serif;
+  color: white;
+  width: 10vw;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+
+#todo-form > input:focus {
+  outline: none;
+}
+
+ul {
+  height: 15vh;
+  overflow-x: hidden;
+}
+
+ul::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+ul::-webkit-scrollbar-thumb {
+  height: 10vh;
+  background: white;
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+button {
+  margin-right: 5px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 1.5vw;
+}
+/* 배경화면 */
+
+img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
+
+/* 날씨 */
+
+#weather {
+  font-size: 1.3vw;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+/* 명언 */
+
+#quotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+#quotes > span:first-child {
+  margin-bottom: 5px;
+  font-size: 1.3vw;
+}
+
+#quotes > span:last-child {
+  font-size: 1.1vw;
+}
